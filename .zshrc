@@ -11,7 +11,7 @@ DEFAULT_USER=$(whoami)
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/shimonb/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -20,6 +20,8 @@ export ZSH="/Users/shimonb/.oh-my-zsh"
 
 # ZSH_THEME="robbyrussell"
 ZSH_THEME="powerlevel10k/powerlevel10k"
+# ZSH_THEME="oxide"
+# ZSH_THEME="random"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -95,6 +97,15 @@ autoload -U compinit && compinit
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
+
+# Environment variables.
+source ~/.bash_exports
+
+# User config.
+source ~/.zsh/setopt.zsh
+
+# Aliases.
+source ~/.bash_aliases
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
