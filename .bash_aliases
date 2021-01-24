@@ -49,7 +49,7 @@ alias bars="bash ~/.scripts/polybar_launch.sh" # Run Polybar relaunch script
 alias bw="wal -i ~/.config/wall.png" # Rerun pywal
 
 # Adding color
-alias ls='ls -hN --color=auto --group-directories-first'
+#alias ls='ls -h --color=auto --group-directories-first'
 alias crep="grep --color=always" # Color grep - highlight desired sequence.
 alias ccat="highlight --out-format=xterm256" #Color cat - print file with syntax highlighting.
 
